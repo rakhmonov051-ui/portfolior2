@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Durdona — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1f4d;--navy2:#13307a;--sky:#9fc2ff;--paper:#f3f6fd;--ink:#0b1f4d;--card:#ffffff;--muted:#4a5a85;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0a1330;--ink:#eaf0ff;--card:#12214d;--muted:#aab8e0}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Nunito',system-ui,sans-serif;line-height:1.6}
+.hero{background:var(--navy);color:#fff;padding:56px 20px 64px}
+.wrap{max-width:860px;margin:0 auto}
+.hero .wrap{display:flex;gap:36px;align-items:center;flex-wrap:wrap}
+.photo{width:220px;height:260px;border-radius:120px 120px 24px 24px;background:linear-gradient(160deg,var(--navy2),#050f2e);border:4px solid var(--sky);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:90px;font-weight:800;color:var(--sky);flex:none}
+h1{font-family:'Fraunces',serif;font-weight:800;font-size:clamp(38px,8vw,64px);line-height:1.05;margin:0 0 10px}
+.hero p{margin:0;font-size:19px;color:#d5e3ff;max-width:34ch}
+section{padding:44px 20px 0}
+h2{font-family:'Fraunces',serif;font-size:30px;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card{background:var(--card);border-radius:16px;padding:20px;border-left:6px solid var(--navy2)}
+.card b{display:block;font-size:22px;font-family:'Fraunces',serif}
+.card span{color:var(--muted)}
+.bar{height:12px;border-radius:6px;background:rgba(19,48,122,.18);overflow:hidden;margin:6px 0 18px}
+.bar i{display:block;height:100%;background:var(--navy2);border-radius:6px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .bar i{background:var(--sky)}}
+.row{display:flex;justify-content:space-between;font-weight:700}
+.contact{margin:44px 0 0;background:var(--navy);color:#fff;padding:40px 20px 56px;text-align:center}
+.contact a{display:inline-block;margin-top:14px;background:var(--sky);color:var(--navy);font-weight:700;text-decoration:none;padding:14px 26px;border-radius:999px}
+.contact a:focus-visible{outline:3px solid #fff;outline-offset:3px}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <div class="photo">D</div>
+  <div>
+    <h1>Durdona</h1>
+    <p>13 yosh · O‘quvchi · Ingliz tilini sevaman</p>
+  </div>
+</div></header>
+
+<section><div class="wrap">
+  <h2>Men haqimda</h2>
+  <p>Salom! Men Durdona, 13 yoshdaman va hozir maktabda o‘qiyman. Ingliz tilini juda yaxshi ko‘raman va uni 2 yildan beri o‘rganib kelaman. Yangi so‘zlar o‘rganish va ingliz tilida gaplashishni mashq qilish menga yoqadi.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Ma’lumotlar</h2>
+  <div class="grid">
+    <div class="card"><b>13</b><span>yosh</span></div>
+    <div class="card"><b>2 yil</b><span>ingliz tili tajribasi</span></div>
+    <div class="card"><b>O‘quvchi</b><span>hozirgi faoliyat</span></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Ko‘nikmalar</h2>
+  <div class="row"><span>Ingliz tili</span><span>Yaxshi</span></div>
+  <div class="bar"><i style="width:80%"></i></div>
+  <div class="row"><span>O‘rganishga qiziqish</span><span>Yuqori</span></div>
+  <div class="bar"><i style="width:90%"></i></div>
+</div></section>
+
+<footer class="contact" id="aloqa">
+  <div class="wrap">
+    <h2>Murojaat uchun</h2>
+    <p>Men bilan Instagram orqali bog‘laning</p>
+    <a href="https://www.instagram.com/712.dss/" target="_blank" rel="noopener">Instagram: @712.dss</a>
+  </div>
+</footer>
+</body>
+</html>
